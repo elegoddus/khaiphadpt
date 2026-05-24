@@ -1,0 +1,1865 @@
+============================================================
+  DATASET HỘI THOẠI CSKH TIẾNG VIỆT — PHẦN 2 (100 ĐOẠN)
+  Đánh số: #101 - #200
+  Không trùng nội dung với Phần 1 (#001 - #100)
+  [KH] = Khách hàng | [TV] = Tư vấn viên
+============================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 1: KHIẾU NẠI GIAO HÀNG CHẬM (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #101
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: medium
+Hài lòng   : unsatisfied
+============================================================
+[KH] shop ơi mua máy sấy tóc giao nhanh 2h mà giờ 6h r chưa thấy
+     → intent: complaint
+[TV] Dạ em xin lỗi ạ. Đơn giao nhanh mà quá giờ cam kết là shop chịu trách nhiệm ạ. Anh/chị cho em mã đơn để em xử lý ngay ạ.
+     → intent: request_info
+[KH] DH20240501, mình cần dùng tối nay mà giờ k có
+     → intent: provide_info
+[TV] Dạ em liên hệ shipper rồi ạ, shipper đang kẹt tại bưu cục do quá tải ạ. Em cam kết giao trước 8h tối nay và hoàn phí giao nhanh cho anh/chị ạ.
+     → intent: resolve
+[KH] 8h?? thôi trễ quá r, mình k cần nữa, hoàn tiền đi
+     → intent: request_action
+[TV] Dạ em xử lý hoàn tiền ngay ạ. Em rất xin lỗi vì đã không đáp ứng được ạ.
+     → intent: apologize
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #102
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình đặt hàng express nhưng trạng thái 3 ngày rồi vẫn "đang lấy hàng", có vấn đề gì không?
+     → intent: inquiry
+[TV] Dạ để em kiểm tra ngay ạ. Anh/chị cho em mã đơn nhé ạ.
+     → intent: request_info
+[KH] DH20240502 bạn ơi.
+     → intent: provide_info
+[TV] Dạ em xem rồi ạ. Sản phẩm đang hết hàng tại kho gần nhất, đang chuyển từ kho xa hơn nên bị delay ạ. Dự kiến giao trong 2 ngày tới ạ.
+     → intent: resolve
+[KH] Hết hàng mà vẫn cho đặt à? Thôi mình chờ vậy.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #103
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] e đặt đồ ăn vặt ship nội thành mà 2ng r k giao, đồ ăn hỏng r thì sao
+     → intent: complaint
+[TV] Dạ em hiểu lo lắng của anh/chị ạ. Thực phẩm giao chậm ảnh hưởng chất lượng là vấn đề nghiêm trọng ạ. Em kiểm tra và gửi đơn mới ngay hôm nay ạ.
+     → intent: resolve
+[KH] gửi mới thì dc, nhưng hàng cũ tính sao
+     → intent: inquiry
+[TV] Dạ anh/chị không cần trả lại ạ. Em gửi đơn mới hoàn toàn miễn phí và giao trong 4 tiếng ạ.
+     → intent: confirm_resolve
+[KH] ok tks shop xử lý đẹp
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #104
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi sao shipper liên hệ e nói để trước cửa mà e k đồng ý, phải giao tận tay chứ
+     → intent: complaint
+[TV] Dạ em hiểu ạ. Shipper không được phép để hàng trước cửa khi chưa có sự đồng ý của anh/chị ạ. Anh/chị có nhận được hàng chưa ạ?
+     → intent: request_info
+[KH] chưa, mình từ chối r bảo giao lại chiều
+     → intent: provide_info
+[TV] Dạ em đã phản hồi tới đơn vị vận chuyển yêu cầu giao tận tay ạ. Shipper sẽ liên hệ lại trước khi giao ạ.
+     → intent: resolve
+[KH] ok nhớ bảo gọi trước 30 phút nha
+     → intent: request_action
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #105
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Hàng đã giao xong nhưng mình thấy kiện hàng bị ướt do mưa, shipper không bọc cẩn thận.
+     → intent: complaint
+[TV] Dạ em xin lỗi ạ. Anh/chị mở ra kiểm tra sản phẩm bên trong xem có ảnh hưởng không và chụp ảnh kiện hàng bị ướt gửi em ạ.
+     → intent: request_info
+[KH] Hàng bên trong còn được bọc nilong nên không sao, nhưng hộp thì ướt hết.
+     → intent: provide_info
+[TV] Dạ may mà sản phẩm không bị ảnh hưởng ạ. Em ghi nhận phản hồi về shipper và tặng anh/chị voucher 20k xin lỗi vì trải nghiệm chưa tốt ạ.
+     → intent: resolve
+[KH] Cảm ơn shop chu đáo, lần sau nhắc shipper bọc kỹ hơn nhé!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #106
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] gọi hotline shipper k nghe máy, nhắn tin k rep, hàng ở đâu k ai biết
+     → intent: complaint
+[TV] Dạ em xin lỗi vì trải nghiệm này ạ. Anh/chị cho em mã đơn để em liên hệ trực tiếp quản lý bưu cục xử lý ạ.
+     → intent: request_info
+[KH] DH20240506 đó shop
+     → intent: provide_info
+[TV] Dạ em đã liên hệ quản lý bưu cục ạ. Shipper cũ bị ốm, đã chuyển sang shipper mới ạ. Shipper mới sẽ gọi anh/chị trong 1 tiếng ạ.
+     → intent: resolve
+[KH] lần sau mà v nữa thì k mua ở đây nữa
+     → intent: negative_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #107
+Chủ đề     : Khiếu nại giao hàng chậm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn theo dõi đơn hàng realtime nhưng link tracking báo lỗi, không xem được.
+     → intent: complaint
+[TV] Dạ link tracking đôi khi bị lỗi do hệ thống cập nhật chậm ạ. Anh/chị cho em mã đơn, em gửi link tracking mới nhé ạ.
+     → intent: request_info
+[KH] DH20240507 bạn ơi.
+     → intent: provide_info
+[TV] Dạ em gửi link mới đây ạ. Đơn đang ở bưu cục Q.7, shipper sẽ giao chiều nay ạ.
+     → intent: resolve
+[KH] Link mới xem được rồi, cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 2: YÊU CẦU HOÀN TIỀN (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #108
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua đồng hồ nhưng về bị chạy nhanh 5 phút mỗi ngày, muốn hoàn tiền.
+     → intent: request_action
+[TV] Dạ lỗi chạy sai giờ là lỗi sản xuất ạ. Anh/chị chụp video kim đồng hồ chạy nhanh và gửi em nhé ạ.
+     → intent: request_info
+[KH] Gửi video rồi bạn, mỗi ngày nhanh đúng 5 phút.
+     → intent: provide_info
+[TV] Dạ em xác nhận lỗi rồi ạ. Em hoàn tiền 100% trong 3 ngày và anh/chị không cần gửi trả ạ.
+     → intent: resolve
+[KH] Xử lý nhanh quá, cảm ơn shop!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #109
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: medium
+Hài lòng   : unsatisfied
+============================================================
+[KH] shop ơi hôm qua e mua sp giá 500k, hôm nay thấy giảm còn 350k, hoàn chênh lệch k
+     → intent: request_action
+[TV] Dạ em rất tiếc ạ. Chính sách của shop không hỗ trợ bù chênh lệch giá sau khi đặt hàng ạ.
+     → intent: resolve
+[KH] vô lý v, mới 1 ngày mà chênh 150k
+     → intent: complaint
+[TV] Dạ em hiểu anh/chị bức xúc ạ. Em không thể hoàn chênh lệch nhưng có thể tặng voucher 80k cho lần mua tiếp theo ạ.
+     → intent: resolve
+[KH] thôi k cần, lần sau mình canh sale rồi mới mua
+     → intent: negative_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #110
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình đặt hàng trả trước nhưng đơn bị hủy do shop hết hàng, khi nào tiền về?
+     → intent: inquiry
+[TV] Dạ khi shop hủy đơn do hết hàng, tiền được hoàn tự động trong 5-7 ngày làm việc ạ. Anh/chị thanh toán qua hình thức nào ạ?
+     → intent: request_info
+[KH] Mình thanh toán qua thẻ Visa Techcombank.
+     → intent: provide_info
+[TV] Dạ với thẻ Visa thường 5-7 ngày ạ. Em ghi nhận và theo dõi giúp anh/chị ạ. Nếu quá 7 ngày chưa thấy tiền thì nhắn em nhé ạ.
+     → intent: resolve
+[KH] Ok, mình chờ. Cảm ơn bạn!
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #111
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: heavy
+Hài lòng   : neutral
+============================================================
+[KH] đặt hàng ck xong r mà shop k ship, giờ muốn lấy tiền lại
+     → intent: request_action
+[TV] Dạ anh/chị cho em mã đơn và thời gian chuyển khoản ạ.
+     → intent: request_info
+[KH] DH20240511 ck tối qua
+     → intent: provide_info
+[TV] Dạ em kiểm tra rồi ạ. Đơn chưa xử lý do kho đang kiểm hàng ạ. Anh/chị muốn chờ giao (dự kiến ngày mai) hay hoàn tiền ạ?
+     → intent: request_info
+[KH] hoàn tiền đi, mua chỗ khác r
+     → intent: request_action
+[TV] Dạ em hoàn tiền trong 24h ạ. Em xin lỗi vì sự bất tiện ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #112
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e mua quần nhưng vải khác hẳn mô tả, nói cotton 100% mà mặc nóng như polyester
+     → intent: complaint
+[TV] Dạ em xin lỗi ạ. Anh/chị có thể chụp ảnh nhãn thành phần vải bên trong quần gửi em không ạ?
+     → intent: request_info
+[KH] đây, nhãn ghi TC 65/35 chứ k phải cotton 100%
+     → intent: provide_info
+[TV] Dạ shop ghi sai thông tin sản phẩm, đây hoàn toàn là lỗi của shop ạ. Em hoàn tiền 100% và tặng voucher 100k xin lỗi anh/chị ạ.
+     → intent: resolve
+[KH] ok tks shop thành thật nhận lỗi
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #113
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình muốn hoàn tiền nhưng sản phẩm đã dùng được 3 ngày rồi, có được không?
+     → intent: inquiry
+[TV] Dạ chính sách đổi trả yêu cầu sản phẩm còn nguyên trạng chưa sử dụng ạ. Tuy nhiên nếu sản phẩm có lỗi kỹ thuật thì vẫn hoàn được ạ. Sản phẩm bị lỗi gì ạ?
+     → intent: request_info
+[KH] Không lỗi, chỉ là mình mua nhầm loại không phù hợp.
+     → intent: provide_info
+[TV] Dạ trường hợp này không thuộc diện hoàn tiền ạ. Tuy nhiên anh/chị có thể rao bán lại trên mục Đồ cũ của app hoặc em hỗ trợ giảm 20% khi mua sản phẩm thay thế ạ.
+     → intent: resolve
+[KH] Vậy mình bán lại trên app vậy. Cảm ơn bạn gợi ý.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #114
+Chủ đề     : Yêu cầu hoàn tiền
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] mua 2 cái giống nhau do app bị lag đặt 2 lần, hủy 1 giúm
+     → intent: request_action
+[TV] Dạ anh/chị cho em 2 mã đơn để em hủy 1 đơn trùng nhé ạ.
+     → intent: request_info
+[KH] DH600 và DH601, hủy DH601 đi
+     → intent: provide_info
+[TV] Dạ em đã hủy DH601 và hoàn tiền về ví ạ. DH600 vẫn đang xử lý bình thường ạ.
+     → intent: resolve
+[KH] nhanh thiệt, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 3: SẢN PHẨM LỖI / HƯ HỎNG (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #115
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua bàn ủi hơi nước nhưng bị rỉ nước thay vì phun hơi, chắc là lỗi.
+     → intent: complaint
+[TV] Dạ bàn ủi rỉ nước có thể do lỗi van hoặc chưa đủ nhiệt ạ. Anh/chị đã để bàn ủi nóng đủ 3-5 phút trước khi dùng chưa ạ?
+     → intent: request_info
+[KH] Mình đợi 10 phút rồi mà vẫn rỉ nước, không ra hơi.
+     → intent: provide_info
+[TV] Dạ vậy là lỗi van hơi rồi ạ. Em gửi sản phẩm mới thay thế trong 2 ngày, shipper thu hồi cái cũ ạ.
+     → intent: resolve
+[KH] Được, cảm ơn bạn hỗ trợ nhanh!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #116
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi pin sạc dự phòng e mua bị phồng lên, dùng có nguy hiểm k
+     → intent: complaint
+[TV] Dạ pin phồng rất nguy hiểm ạ! Anh/chị KHÔNG nên sử dụng tiếp ạ. Để xa nguồn nhiệt và liên hệ em ngay để đổi sản phẩm mới ạ.
+     → intent: escalate
+[KH] ok e để riêng r, đổi mới giúm e vs
+     → intent: request_action
+[TV] Dạ em tạo đơn đổi hàng khẩn cấp ạ. Shipper sẽ mang sản phẩm mới tới và thu hồi pin phồng trong ngày mai ạ. Anh/chị nhớ không sạc hoặc dùng pin cũ nhé ạ.
+     → intent: confirm_resolve
+[KH] ok biết r, mình đợi shipper
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #117
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Giày mình mua bị bong keo ở phần đế sau 1 tuần đi nhẹ nhàng, chất lượng quá kém.
+     → intent: complaint
+[TV] Dạ em rất xin lỗi ạ. Bong keo sau 1 tuần là lỗi sản xuất rõ ràng ạ. Anh/chị gửi ảnh phần bong keo cho em nhé ạ.
+     → intent: request_info
+[KH] Đây ảnh, bong gần hết đế bên phải rồi.
+     → intent: provide_info
+[TV] Dạ em xác nhận lỗi ạ. Anh/chị muốn đổi đôi mới cùng mẫu hay chọn mẫu khác cùng giá ạ?
+     → intent: request_info
+[KH] Đổi mẫu khác đi, mẫu này mình hết tin tưởng rồi.
+     → intent: request_action
+[TV] Dạ anh/chị chọn mẫu mới trên app và báo em, em xử lý đổi ngay ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #118
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] mua máy tính bảng 8 triệu dùng 2 tuần đã lag, chậm như rùa
+     → intent: complaint
+[TV] Dạ em rất tiếc ạ. Anh/chị thử reset máy về cài đặt gốc xem có cải thiện không ạ?
+     → intent: request_info
+[KH] reset r vẫn lag, app gì mở cũng chậm
+     → intent: provide_info
+[TV] Dạ vậy có thể là lỗi phần cứng hoặc RAM ạ. Sản phẩm còn bảo hành, em chuyển tới trung tâm kiểm tra trong 3-5 ngày ạ.
+     → intent: resolve
+[KH] 3-5 ngày?? 8 triệu mà phải chờ sửa, nên đổi máy mới chứ
+     → intent: negative_feedback
+[TV] Dạ em hiểu ạ. Nếu trung tâm xác nhận lỗi phần cứng sẽ đổi máy mới ạ. Em ưu tiên xử lý trong 2 ngày cho anh/chị ạ.
+     → intent: escalate
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #119
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi loa bluetooth mua mới mà k kết nối dc vs điện thoại
+     → intent: complaint
+[TV] Dạ anh/chị thử bật bluetooth trên điện thoại, giữ nút nguồn loa 3 giây cho đèn nhấp nháy rồi quét tìm thiết bị nhé ạ.
+     → intent: resolve
+[KH] làm theo r mà điện thoại k tìm thấy loa
+     → intent: provide_info
+[TV] Dạ anh/chị thử reset loa bằng cách giữ đồng thời nút + và nút nguồn 5 giây ạ. Nếu vẫn không được thì đây là lỗi module bluetooth ạ.
+     → intent: request_info
+[KH] reset xong kết nối dc r shop ơi, tks nhiều
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #120
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Máy pha cà phê mình mua bị rò rỉ nước phía dưới khi pha, mình sợ chập điện.
+     → intent: complaint
+[TV] Dạ rò rỉ nước gần bộ phận điện rất nguy hiểm ạ. Anh/chị ngắt điện máy ngay và không sử dụng nữa ạ. Gửi ảnh phần rò rỉ cho em nhé ạ.
+     → intent: escalate
+[KH] Đã ngắt điện rồi, gửi ảnh đây.
+     → intent: provide_info
+[TV] Dạ em xem ạ. Đây là lỗi gioăng bình nước ạ. Em gửi máy mới ngay ngày mai và thu hồi máy cũ ạ.
+     → intent: resolve
+[KH] Oke, nhớ giao máy mới trước rồi mới thu cũ nhé.
+     → intent: request_action
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #121
+Chủ đề     : Sản phẩm lỗi / hư hỏng
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] quạt mới mua chạy kêu lạch cạch, ngủ k dc
+     → intent: complaint
+[TV] Dạ tiếng kêu lạch cạch có thể do lỏng ốc cánh quạt hoặc lỗi motor ạ. Anh/chị quay video gửi em xem ạ.
+     → intent: request_info
+[KH] clip đây shop
+     → intent: provide_info
+[TV] Dạ em xem rồi, đây là lỗi motor ạ. Em đổi quạt mới cùng mẫu, shipper tới trong ngày mai ạ.
+     → intent: resolve
+[KH] ok dc, giao buổi sáng nha shop
+     → intent: request_action
+[TV] Dạ em ghi chú giao buổi sáng ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 4: HỎI THÔNG TIN ĐƠN HÀNG (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #122
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn biết đơn hàng có thể nhờ người khác nhận thay không, vì mình đi công tác.
+     → intent: inquiry
+[TV] Dạ được ạ. Anh/chị ghi chú tên và số điện thoại người nhận thay trong phần Ghi chú đơn hàng ạ. Shipper sẽ liên hệ người đó khi giao ạ.
+     → intent: resolve
+[KH] Mình ghi chú rồi, nhờ vợ mình nhận, tên Nguyễn Thị B, số 0909123456.
+     → intent: provide_info
+[TV] Dạ em ghi nhận rồi ạ. Shipper sẽ gọi số đó khi giao ạ. Chúc anh đi công tác thuận lợi ạ!
+     → intent: confirm_resolve
+[KH] Cảm ơn bạn nhiều!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #123
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi e đặt 2 đơn cùng địa chỉ, gộp ship dc k
+     → intent: request_action
+[TV] Dạ hiện tại hệ thống không hỗ trợ gộp đơn tự động ạ. Tuy nhiên nếu 2 đơn từ cùng kho và cùng đơn vị vận chuyển thì có thể giao cùng lúc ạ. Anh/chị cho em 2 mã đơn để kiểm tra nhé ạ.
+     → intent: request_info
+[KH] DH700 và DH701
+     → intent: provide_info
+[TV] Dạ 2 đơn cùng kho, em đã ghi chú giao cùng chuyến cho shipper ạ. Anh/chị chỉ trả 1 lần phí ship ạ.
+     → intent: resolve
+[KH] ok hay quá, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #124
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình có thể đặt hàng trước và chọn ngày giao cụ thể được không?
+     → intent: inquiry
+[TV] Dạ được ạ. Khi đặt hàng anh/chị chọn mục Hẹn ngày giao trong phần Tùy chọn vận chuyển, có thể đặt lịch tối đa 7 ngày trước ạ.
+     → intent: resolve
+[KH] Tuyệt, mình sẽ hẹn giao thứ 7 tuần này vì ngày thường đi làm.
+     → intent: acknowledge
+[TV] Dạ lưu ý giao hàng thứ 7 chỉ áp dụng buổi sáng 8h-12h ạ. Anh/chị sắp xếp ở nhà nhé ạ.
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #125
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: heavy
+Hài lòng   : neutral
+============================================================
+[KH] đặt hàng xong quên add mã giảm giá, sửa dc k
+     → intent: request_action
+[TV] Dạ sau khi đặt hàng không thể thêm mã giảm giá trên app ạ. Tuy nhiên anh/chị cho em mã đơn và mã voucher, em áp dụng thủ công ạ.
+     → intent: request_info
+[KH] DH800, mã NEWUSER30
+     → intent: provide_info
+[TV] Dạ mã NEWUSER30 giảm 30k đủ điều kiện cho đơn DH800 ạ. Em đã trừ 30k, anh/chị kiểm tra lại tổng tiền trong app nhé ạ.
+     → intent: confirm_resolve
+[KH] ok dc r, tks bạn
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #126
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi cho hỏi đặt hàng bằng tài khoản này nhưng muốn xuất hóa đơn tên công ty dc k
+     → intent: inquiry
+[TV] Dạ được ạ. Anh/chị cung cấp tên công ty, mã số thuế và địa chỉ xuất hóa đơn nhé ạ. Ghi vào phần Ghi chú đơn hàng hoặc nhắn em ạ.
+     → intent: request_info
+[KH] Công ty ABC, MST 0123456789, 100 Nguyễn Huệ Q1
+     → intent: provide_info
+[TV] Dạ em ghi nhận rồi ạ. Hóa đơn VAT sẽ được xuất và gửi email trong 3 ngày làm việc sau khi nhận hàng ạ.
+     → intent: confirm_resolve
+[KH] ok perfect, tks shop nha
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #127
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình muốn mua hàng nhưng không muốn tạo tài khoản, đặt hàng khách vãng lai được không?
+     → intent: inquiry
+[TV] Dạ shop hỗ trợ đặt hàng không cần tài khoản ạ. Anh/chị chỉ cần điền tên, số điện thoại và địa chỉ khi checkout là được ạ. Tuy nhiên sẽ không tích điểm và theo dõi đơn hàng sẽ bị hạn chế ạ.
+     → intent: resolve
+[KH] Vậy mình tạo tài khoản luôn cho tiện. Cảm ơn bạn tư vấn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #128
+Chủ đề     : Hỏi thông tin đơn hàng
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] mua hàng trên web hay app, cái nào rẻ hơn v shop
+     → intent: inquiry
+[TV] Dạ giá trên web và app giống nhau ạ. Tuy nhiên app thường có thêm mã giảm giá độc quyền và flash sale riêng ạ. Em khuyên đặt qua app để nhiều ưu đãi hơn ạ.
+     → intent: resolve
+[KH] oke mình tải app luôn, tks
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 5: TƯ VẤN SẢN PHẨM (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #129
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Bạn tư vấn giúp mình máy hút bụi cầm tay tốt nhất tầm dưới 3 triệu.
+     → intent: inquiry
+[TV] Dạ tầm dưới 3 triệu em gợi ý Deerma DX700 hoặc Xiaomi G9 ạ. Anh/chị dùng hút bụi sàn nhà hay thảm, nệm ạ?
+     → intent: request_info
+[KH] Mình dùng cả sàn gạch và nệm.
+     → intent: provide_info
+[TV] Dạ vậy chọn Xiaomi G9 phù hợp hơn vì có 2 đầu hút chuyên biệt cho sàn và nệm, lực hút 120W, pin 60 phút ạ. Giá 2.8 triệu đang giảm 10% ạ.
+     → intent: resolve
+[KH] Nghe tốt, mình đặt Xiaomi G9 luôn. Cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #130
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi cho e hỏi nên mua máy giặt cửa trước hay cửa trên, nhà 2 người
+     → intent: inquiry
+[TV] Dạ nhà 2 người thì máy giặt 7-8kg là đủ ạ. Cửa trước giặt sạch hơn, tiết kiệm nước nhưng giá cao hơn ạ. Cửa trên giặt nhanh, giá rẻ, dễ thêm đồ giữa chừng ạ. Ngân sách anh/chị tầm nào ạ?
+     → intent: request_info
+[KH] tầm 5-7 triệu thôi shop
+     → intent: provide_info
+[TV] Dạ tầm đó cửa trên là phù hợp nhất ạ. Em gợi ý Samsung WA80T5160BY 8kg giá 5.5 triệu hoặc LG T2108VSPM 8kg giá 6.2 triệu ạ.
+     → intent: resolve
+[KH] ok lấy samsung cho rẻ hơn, tks shop tư vấn kỹ
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #131
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình bị dị ứng da, muốn mua nước giặt không chứa hóa chất gây kích ứng.
+     → intent: inquiry
+[TV] Dạ với da nhạy cảm nên chọn nước giặt không chứa SLS, paraben, phosphat và không hương liệu ạ. Em gợi ý Attitude hoặc Ecover Zero ạ.
+     → intent: resolve
+[KH] Hai cái đó giá bao nhiêu vậy bạn?
+     → intent: inquiry
+[TV] Dạ Attitude 1L giá 220k, Ecover Zero 1.5L giá 310k ạ. Ecover tiết kiệm hơn tính theo mỗi lần giặt ạ.
+     → intent: resolve
+[KH] Để mình xem thêm review rồi quyết định. Cảm ơn bạn nhé.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #132
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] e muốn mua ghế công thái học ngồi làm việc 8h, giá tầm 3-5tr dc k
+     → intent: inquiry
+[TV] Dạ tầm 3-5 triệu có nhiều ghế công thái học tốt ạ. Em gợi ý Sihoo M57 (3.5 triệu) hoặc Hòa Phát GL327 (4.2 triệu) ạ. Cả hai đều có tựa đầu, tay gập, lưng lưới thoáng ạ.
+     → intent: resolve
+[KH] cái nào ngồi lâu k đau lưng shop
+     → intent: inquiry
+[TV] Dạ Sihoo M57 được đánh giá cao về hỗ trợ lưng hơn vì tựa lưng S-curve ôm sát cột sống ạ. Nhiều anh/chị ngồi 10h+ vẫn ok ạ.
+     → intent: resolve
+[KH] ok lấy Sihoo đi, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #133
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop có bán camera an ninh k, mình muốn lắp ở nhà xem qua đt
+     → intent: inquiry
+[TV] Dạ shop có nhiều dòng camera IP wifi xem qua điện thoại ạ. Anh/chị muốn lắp trong nhà hay ngoài trời, và cần bao nhiêu camera ạ?
+     → intent: request_info
+[KH] 2 cái, 1 trong nhà 1 ngoài trời, ngân sách 2 triệu
+     → intent: provide_info
+[TV] Dạ em gợi ý combo Ezviz C6N (trong nhà) + Ezviz C3WN (ngoài trời) tổng 1.8 triệu ạ. Xem qua app Ezviz trên điện thoại rất rõ cả ban đêm ạ.
+     → intent: resolve
+[KH] ngon đó, đặt combo đó cho mình luôn
+     → intent: request_action
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #134
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình muốn mua sách cho con 5 tuổi, shop có gợi ý bộ nào phù hợp không?
+     → intent: inquiry
+[TV] Dạ với bé 5 tuổi đang chuẩn bị vào lớp 1 thì em gợi ý bộ Ehon (truyện tranh Nhật tương tác), bộ Toán tư duy cho bé, hoặc bộ Bách khoa toàn thư mini ạ. Bé thích chủ đề gì ạ?
+     → intent: request_info
+[KH] Bé thích động vật và khoa học.
+     → intent: provide_info
+[TV] Dạ bộ Bách khoa toàn thư về Động vật (8 cuốn, 350k) rất phù hợp ạ. Hình minh họa đẹp, nội dung vừa sức bé 5 tuổi ạ.
+     → intent: resolve
+[KH] Nghe hay đó, để mình xem thêm trên trang sản phẩm.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #135
+Chủ đề     : Tư vấn sản phẩm
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi sp nào bán chạy nhất tuần này tư vấn cho mình vs
+     → intent: inquiry
+[TV] Dạ tuần này top 3 bán chạy nhất là: kem chống nắng Anessa (1.200 đơn), dầu gội Clear (980 đơn), và áo thun basic cotton (870 đơn) ạ. Anh/chị đang quan tâm danh mục gì ạ?
+     → intent: request_info
+[KH] mình đang cần mua đồ dùng nhà bếp
+     → intent: provide_info
+[TV] Dạ trong danh mục nhà bếp bán chạy nhất là nồi chiên không dầu Philips, bộ dao Tupperware, và thớt gỗ kháng khuẩn ạ. Em gửi link từng sản phẩm nhé ạ.
+     → intent: resolve
+[KH] ok gửi link đi, mình xem luôn
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 6: KHUYẾN MÃI / VOUCHER (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #136
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình giới thiệu bạn bè mua hàng thì có nhận được gì không?
+     → intent: inquiry
+[TV] Dạ shop có chương trình Giới thiệu bạn bè ạ. Mỗi người bạn đặt đơn thành công qua mã giới thiệu của anh/chị, cả hai cùng nhận 50k vào ví ạ.
+     → intent: resolve
+[KH] Mã giới thiệu của mình ở đâu vậy bạn?
+     → intent: inquiry
+[TV] Dạ anh/chị vào app > Tài khoản > Giới thiệu bạn bè, mã giới thiệu hiển thị ngay đó ạ. Copy gửi cho bạn bè là được ạ.
+     → intent: resolve
+[KH] Thấy rồi, mình gửi cho mấy đứa bạn ngay. Cảm ơn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #137
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi có khuyến mãi gì cho khách mới k, e lần đầu mua
+     → intent: inquiry
+[TV] Dạ khách mới được tặng bộ 3 voucher: giảm 30k đơn từ 200k, giảm 50k đơn từ 500k, và freeship toàn quốc ạ. Anh/chị kiểm tra mục Ví voucher trong app nhé ạ.
+     → intent: resolve
+[KH] mình check r k thấy voucher nào hết
+     → intent: complaint
+[TV] Dạ anh/chị đăng ký tài khoản qua số điện thoại hay Facebook ạ? Nếu qua Facebook đôi khi voucher gửi vào email liên kết ạ.
+     → intent: request_info
+[KH] đk bằng sdt thôi
+     → intent: provide_info
+[TV] Dạ em cấp thủ công 3 voucher vào tài khoản anh/chị rồi ạ. Kiểm tra lại trong 5 phút nhé ạ.
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #138
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] e đặt đơn 499k mà mã giảm giá yêu cầu 500k, thiếu 1k k dùng dc, vô lý
+     → intent: complaint
+[TV] Dạ em hiểu anh/chị bực bội vì chênh có 1k ạ. Để em áp dụng đặc biệt cho anh/chị nhé ạ. Mã giảm giá nào vậy ạ?
+     → intent: request_info
+[KH] mã MEGA100 giảm 100k
+     → intent: provide_info
+[TV] Dạ em đã áp mã MEGA100 vào đơn, trừ 100k rồi ạ. Tổng còn 399k ạ. Lần sau mua thêm 1k nha anh/chị ạ.
+     → intent: resolve
+[KH] haha ok tks shop dễ thương
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #139
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Shop có chương trình combo tiết kiệm không, mình muốn mua cả set.
+     → intent: inquiry
+[TV] Dạ shop đang có nhiều combo ưu đãi ạ. Anh/chị quan tâm danh mục gì thì em gợi ý combo phù hợp ạ.
+     → intent: request_info
+[KH] Mình cần combo chăm sóc da cơ bản cho nam.
+     → intent: provide_info
+[TV] Dạ em gợi ý combo Skin Care For Men gồm: sữa rửa mặt + toner + kem dưỡng ẩm, giá combo 420k thay vì mua lẻ 550k, tiết kiệm 130k ạ.
+     → intent: resolve
+[KH] Tiết kiệm 130k thì quá tốt, mình mua combo luôn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #140
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi sao mã voucher e nhận được qua email nhập vào báo hết lượt dùng
+     → intent: complaint
+[TV] Dạ mỗi voucher có giới hạn số lượt sử dụng chung cho tất cả khách hàng ạ. Voucher hết lượt nghĩa là đã có đủ người dùng rồi ạ.
+     → intent: resolve
+[KH] vậy gửi voucher khác cho mình dc k, mã cũ k dùng dc thì phí
+     → intent: request_action
+[TV] Dạ em tặng anh/chị voucher riêng VIPONLY50 giảm 50k, chỉ mình anh/chị dùng được ạ.
+     → intent: resolve
+[KH] ok cảm ơn shop bù cho mình
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #141
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Bạn cho mình hỏi mua trên app có rẻ hơn mua ở cửa hàng không?
+     → intent: inquiry
+[TV] Dạ giá trên app thường bằng hoặc rẻ hơn cửa hàng ạ. Đặc biệt app có thêm voucher, flash sale, và chương trình tích điểm mà cửa hàng không có ạ.
+     → intent: resolve
+[KH] Vậy thì mình mua trên app cho tiện. Cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #142
+Chủ đề     : Khuyến mãi / Voucher
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] săn deal 0đ mà vào giỏ r thanh toán lại báo hết, lừa đảo à
+     → intent: complaint
+[TV] Dạ em xin lỗi ạ. Deal 0đ số lượng cực kỳ giới hạn (thường 50-100 suất) nên hết rất nhanh ạ. Hệ thống xác nhận theo thời điểm thanh toán thành công chứ không phải lúc thêm vào giỏ ạ.
+     → intent: apologize
+[KH] thế thì đừng quảng cáo deal 0đ nữa, toàn chiêu trò
+     → intent: negative_feedback
+[TV] Dạ em ghi nhận phản hồi của anh/chị ạ. Em tặng voucher 30k để bù đắp phần nào ạ. Shop sẽ cải thiện trải nghiệm deal 0đ ạ.
+     → intent: resolve
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 7: ĐỔI SIZE / MÀU SẮC (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #143
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua váy cho vợ nhưng vợ mình không thích màu, đổi được không?
+     → intent: request_action
+[TV] Dạ được ạ nếu còn trong 7 ngày và sản phẩm nguyên tem ạ. Anh muốn đổi sang màu gì ạ?
+     → intent: request_info
+[KH] Đổi từ đỏ sang đen nhé bạn, mã đơn DH20240530.
+     → intent: provide_info
+[TV] Dạ em kiểm tra kho còn size đó màu đen ạ. Anh gửi hàng về kho, em gửi màu đen ngay khi nhận ạ. Phí ship đổi hàng shop chịu ạ.
+     → intent: resolve
+[KH] Tốt quá, cảm ơn shop hỗ trợ!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #144
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi mua giày mà 2 chiếc k đều size, bên 38 bên 39, lỗi j v
+     → intent: complaint
+[TV] Dạ đây là lỗi kiểm tra chất lượng của kho ạ. Em xin lỗi ạ. Anh/chị gửi ảnh size 2 chiếc giúp em ạ.
+     → intent: request_info
+[KH] đây ảnh, rõ ràng size khác nhau
+     → intent: provide_info
+[TV] Dạ em xác nhận lỗi rồi ạ. Em gửi đôi mới đúng size, anh/chị không cần trả đôi cũ ạ. Em tặng thêm voucher 50k xin lỗi ạ.
+     → intent: resolve
+[KH] ok dc, nhớ kiểm tra kỹ đôi mới trước khi gửi nha
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #145
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: heavy
+Hài lòng   : neutral
+============================================================
+[KH] mua túi xách nhưng màu thật khác xa ảnh, cam nhạt mà nhận dc cam đậm
+     → intent: complaint
+[TV] Dạ do ánh sáng chụp ảnh có thể chênh lệch nhẹ ạ. Anh/chị muốn đổi sang màu khác hoặc hoàn tiền không ạ?
+     → intent: request_info
+[KH] có màu nào gần cam nhạt k shop
+     → intent: inquiry
+[TV] Dạ có màu hồng san hô gần nhất với cam nhạt ạ. Em gửi ảnh thật sản phẩm cho anh/chị xem trước nhé ạ.
+     → intent: resolve
+[KH] gửi ảnh đi, mình xem
+     → intent: request_action
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #146
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua bộ chăn ga cho giường 1m8 nhưng nhận hàng thấy quá nhỏ, giống 1m6.
+     → intent: complaint
+[TV] Dạ em kiểm tra mã sản phẩm trên bao bì giúp anh/chị nhé ạ. Anh/chị đọc mã trên nhãn sản phẩm cho em ạ.
+     → intent: request_info
+[KH] Mã CG160, chắc 160 là 1m6 rồi.
+     → intent: provide_info
+[TV] Dạ đúng rồi ạ, CG160 là dòng 1m6 ạ. Đây là lỗi giao nhầm ạ. Em gửi ngay bộ CG180 cho giường 1m8 và thu hồi bộ nhầm ạ.
+     → intent: resolve
+[KH] Ok, cảm ơn bạn kiểm tra nhanh!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #147
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi balo e mua màu navy nhưng nhìn ngoài trời lại giống đen, sao v
+     → intent: inquiry
+[TV] Dạ màu navy rất đậm, dưới ánh sáng yếu hoặc ngoài trời sẽ trông giống đen ạ. Đây là đặc điểm của màu chứ không phải lỗi ạ. Anh/chị xem dưới ánh đèn trắng sẽ thấy rõ màu navy ạ.
+     → intent: resolve
+[KH] uh mình bật đèn lên thấy navy thật, hiểu r tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #148
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Shop có hỗ trợ thử đồ trước khi mua không, mình sợ mua online không vừa.
+     → intent: inquiry
+[TV] Dạ shop có dịch vụ Thử trước trả sau cho một số sản phẩm thời trang ạ. Anh/chị chọn đến 3 sản phẩm, thử tại nhà, giữ cái phù hợp và trả lại phần còn lại ạ.
+     → intent: resolve
+[KH] Hay quá, vậy phí thử là bao nhiêu?
+     → intent: inquiry
+[TV] Dạ phí dịch vụ 20k cho mỗi đơn thử ạ. Nếu giữ ít nhất 1 sản phẩm thì miễn phí ạ.
+     → intent: resolve
+[KH] Hợp lý, mình sẽ thử dịch vụ này. Cảm ơn bạn!
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #149
+Chủ đề     : Đổi size / màu sắc
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] e đặt áo cặp cho 2 đứa mà gửi 2 cái cùng size, đổi 1 cái size khác dc k
+     → intent: request_action
+[TV] Dạ được ạ. Anh/chị cho em mã đơn và cần đổi cái nào sang size gì ạ?
+     → intent: request_info
+[KH] DH20240549, 1 cái giữ size M, 1 cái đổi sang size S
+     → intent: provide_info
+[TV] Dạ kho còn size S cùng mẫu ạ. Anh/chị gửi 1 cái size M về, em gửi 1 cái size S lại ạ. Ship miễn phí ạ.
+     → intent: confirm_resolve
+[KH] ok tks shop nha
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 8: LỖI THANH TOÁN (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #150
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình thanh toán qua ZaloPay nhưng tiền đã trừ mà đơn hàng vẫn báo chưa thanh toán.
+     → intent: complaint
+[TV] Dạ trường hợp này do đồng bộ giữa ZaloPay và hệ thống shop bị chậm ạ. Anh/chị chụp màn hình giao dịch trên ZaloPay gửi em nhé ạ.
+     → intent: request_info
+[KH] Gửi ảnh rồi bạn, tiền đã trừ từ 30 phút trước.
+     → intent: provide_info
+[TV] Dạ em xác nhận giao dịch thành công ạ. Em cập nhật trạng thái đơn sang Đã thanh toán ạ. Anh/chị refresh app sẽ thấy ạ.
+     → intent: resolve
+[KH] Thấy rồi, cảm ơn bạn xử lý nhanh!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #151
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi e muốn đổi từ thanh toán online sang COD dc k, mình sợ lỗi
+     → intent: request_action
+[TV] Dạ đổi được nếu đơn chưa xử lý ạ. Anh/chị cho em mã đơn nhé ạ.
+     → intent: request_info
+[KH] DH20240551, đổi sang COD giúm e
+     → intent: provide_info
+[TV] Dạ đơn đang chờ xử lý nên đổi được ạ. Em đã chuyển sang COD rồi, anh/chị kiểm tra lại đơn hàng nhé ạ.
+     → intent: confirm_resolve
+[KH] ok tks shop xử lý nhanh
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #152
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua hàng bị tính thuế VAT riêng nhưng trước đó mua không bị, sao vậy?
+     → intent: inquiry
+[TV] Dạ một số sản phẩm nhập khẩu hoặc thuộc danh mục đặc biệt sẽ tính thuế VAT riêng ạ. Anh/chị mua sản phẩm nào để em kiểm tra ạ?
+     → intent: request_info
+[KH] Mình mua vitamin nhập Mỹ.
+     → intent: provide_info
+[TV] Dạ vitamin nhập khẩu từ Mỹ thuộc diện chịu thuế nhập khẩu 5% + VAT 10% theo quy định ạ. Thuế này đã hiển thị rõ tại bước checkout ạ. Trước đó anh/chị mua hàng nội không có thuế này ạ.
+     → intent: resolve
+[KH] Ah vậy ra là vì hàng nhập, mình hiểu rồi. Cảm ơn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #153
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] app báo giao dịch thất bại nhưng tiền bị trừ r, mất tiền à
+     → intent: complaint
+[TV] Dạ anh/chị yên tâm, tiền không mất ạ. Giao dịch thất bại thì tiền sẽ hoàn tự động trong 24-48h ạ. Anh/chị cho em mã giao dịch để em tra soát nhé ạ.
+     → intent: request_info
+[KH] GD20240553, kiểm tra lẹ đi
+     → intent: provide_info
+[TV] Dạ em xác nhận giao dịch thất bại ạ. Tiền đang ở trạng thái "hold" tại ngân hàng, sẽ hoàn trong 24h ạ.
+     → intent: resolve
+[KH] 24h?? sao lâu v, tiền tôi mà
+     → intent: negative_feedback
+[TV] Dạ đây là thời gian xử lý của ngân hàng ạ, shop không giữ tiền ạ. Nếu quá 48h chưa thấy tiền anh/chị báo em xử lý thêm ạ.
+     → intent: apologize
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #154
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop có nhận thanh toán qua ShopeePay hay VNPay k
+     → intent: inquiry
+[TV] Dạ shop hỗ trợ VNPay, MoMo, ZaloPay và chuyển khoản ngân hàng ạ. Hiện chưa liên kết ShopeePay ạ.
+     → intent: resolve
+[KH] vậy VNPay có ưu đãi gì k shop
+     → intent: inquiry
+[TV] Dạ thanh toán qua VNPay đang có chương trình giảm 15k cho đơn từ 150k ạ. Áp dụng đến cuối tháng ạ.
+     → intent: resolve
+[KH] hay đó, mình dùng VNPay luôn, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #155
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình COD mà shipper yêu cầu trả tiền trước khi kiểm tra hàng, có đúng không?
+     → intent: inquiry
+[TV] Dạ không đúng ạ. Theo chính sách, khách hàng COD có quyền mở kiểm tra hàng trước khi thanh toán ạ. Nếu shipper yêu cầu khác thì anh/chị có thể từ chối ạ.
+     → intent: resolve
+[KH] Vậy mình nói lại với shipper nhé. Nếu shipper không đồng ý thì sao?
+     → intent: inquiry
+[TV] Dạ anh/chị gọi hotline shipper hoặc nhắn em ngay, em liên hệ đơn vị vận chuyển xử lý ạ. Quyền lợi kiểm hàng trước là của anh/chị ạ.
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #156
+Chủ đề     : Lỗi thanh toán
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] thanh toán bằng ví ShopeePay liên kết k dc, dùng cách khác dc k
+     → intent: complaint
+[TV] Dạ shop chưa hỗ trợ ShopeePay ạ. Anh/chị có thể dùng MoMo, ZaloPay, VNPay, thẻ ngân hàng hoặc COD ạ.
+     → intent: resolve
+[KH] ok mình dùng momo vậy, dễ hơn
+     → intent: acknowledge
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 9: TÀI KHOẢN / ĐĂNG NHẬP (7 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #157
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi mình đăng nhập bằng fb nhưng fb bị khóa r, giờ k vào dc tk
+     → intent: complaint
+[TV] Dạ anh/chị có liên kết email hoặc số điện thoại với tài khoản shop không ạ? Em có thể chuyển đổi phương thức đăng nhập ạ.
+     → intent: request_info
+[KH] có liên kết email abc123@gmail.com
+     → intent: provide_info
+[TV] Dạ em đã gửi link đặt mật khẩu mới qua email đó ạ. Sau khi đặt mật khẩu, anh/chị đăng nhập bằng email thay vì Facebook ạ.
+     → intent: resolve
+[KH] dc r bạn ơi, đăng nhập ok, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #158
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình có 2 tài khoản trùng số điện thoại, muốn gộp lại 1 được không?
+     → intent: request_action
+[TV] Dạ hệ thống không hỗ trợ gộp tài khoản tự động ạ. Tuy nhiên em có thể chuyển lịch sử đơn hàng và điểm tích lũy từ tài khoản cũ sang tài khoản chính ạ.
+     → intent: resolve
+[KH] Vậy chuyển hết sang tài khoản email abc@gmail.com giúp mình nhé.
+     → intent: request_action
+[TV] Dạ em xử lý trong 1-2 ngày làm việc ạ. Sau khi chuyển xong em khóa tài khoản cũ ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #159
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] e bị nhận tin nhắn quảng cáo liên tục từ shop, tắt đi dc k
+     → intent: request_action
+[TV] Dạ anh/chị vào app > Cài đặt > Thông báo > tắt Thông báo khuyến mãi là hết ạ. Hoặc em tắt giúp từ hệ thống luôn ạ.
+     → intent: resolve
+[KH] tắt giúm e luôn đi, phiền lắm
+     → intent: request_action
+[TV] Dạ em đã tắt thông báo quảng cáo cho tài khoản anh/chị rồi ạ. Từ giờ chỉ nhận thông báo đơn hàng thôi ạ.
+     → intent: confirm_resolve
+[KH] ok chuẩn, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #160
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn cập nhật email nhận hóa đơn và thông báo đơn hàng, làm sao?
+     → intent: inquiry
+[TV] Dạ anh/chị vào Tài khoản > Thông tin cá nhân > Email, chỉnh sửa và lưu lại ạ. Hệ thống sẽ gửi OTP xác nhận email mới trước khi cập nhật ạ.
+     → intent: resolve
+[KH] Cập nhật thành công rồi bạn, cảm ơn nhé!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #161
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi cho hỏi tài khoản của e có hạn sử dụng k, lâu k mua có bị xóa k
+     → intent: inquiry
+[TV] Dạ tài khoản không có hạn sử dụng và không bị xóa do lâu không dùng ạ. Tuy nhiên điểm tích lũy sẽ hết hạn sau 12 tháng nếu không có giao dịch ạ.
+     → intent: resolve
+[KH] ah vậy thì yên tâm, mình chỉ lo mất tk thôi
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #162
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình đăng nhập bị báo "Tài khoản đang đăng nhập trên thiết bị khác", mình chỉ có 1 điện thoại thôi.
+     → intent: complaint
+[TV] Dạ có thể tài khoản bị đăng nhập từ thiết bị lạ ạ. Anh/chị nên đổi mật khẩu ngay để bảo vệ ạ. Em hỗ trợ đăng xuất tất cả thiết bị khác nhé ạ.
+     → intent: escalate
+[KH] Đổi mật khẩu rồi, bạn đăng xuất hết giúp mình nhé.
+     → intent: request_action
+[TV] Dạ em đã đăng xuất tất cả thiết bị khác ạ. Anh/chị nên bật xác thực 2 bước để bảo mật hơn ạ.
+     → intent: resolve
+[KH] Bật rồi, cảm ơn bạn nhắc nhở!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #163
+Chủ đề     : Tài khoản / Đăng nhập
+Mức từ lóng: heavy
+Hài lòng   : neutral
+============================================================
+[KH] e quên mật khẩu, nhập email lấy lại k thấy gửi code v
+     → intent: complaint
+[TV] Dạ email đặt lại mật khẩu đôi khi vào mục Spam ạ. Anh/chị kiểm tra spam thử nhé ạ.
+     → intent: resolve
+[KH] check r k thấy
+     → intent: provide_info
+[TV] Dạ anh/chị thử lại bằng số điện thoại, chọn Quên mật khẩu > Gửi OTP qua SMS ạ.
+     → intent: resolve
+[KH] bằng sdt dc r, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CHỦ ĐỀ 10-14: CÁC TÌNH HUỐNG MỚI (37 đoạn)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+============================================================
+ĐOẠN #164
+Chủ đề     : Hủy đơn hàng
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e muốn hủy đơn, lỡ đặt nhầm sản phẩm rồi
+     → intent: request_action
+[TV] Dạ anh/chị cho em mã đơn để em kiểm tra xem có thể hủy không nhé ạ.
+     → intent: request_info
+[KH] DH20240564, hủy nhanh giúm e vs
+     → intent: provide_info
+[TV] Dạ đơn chưa đóng gói nên hủy được ạ. Em hủy ngay cho anh/chị ạ. Tiền hoàn trong 1-3 ngày ạ.
+     → intent: resolve
+[KH] tks shop xử lý nhanh
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #165
+Chủ đề     : Hủy đơn hàng
+Mức từ lóng: light
+Hài lòng   : unsatisfied
+============================================================
+[KH] Mình muốn hủy đơn nhưng đơn đã đang vận chuyển rồi, hủy được không?
+     → intent: request_action
+[TV] Dạ đơn đang vận chuyển thì không thể hủy trên hệ thống ạ. Anh/chị có thể từ chối nhận hàng khi shipper giao, đơn sẽ tự hoàn về shop ạ.
+     → intent: resolve
+[KH] Vậy mình từ chối nhận thì tiền hoàn bao lâu?
+     → intent: inquiry
+[TV] Dạ sau khi hàng về kho, shop xác nhận và hoàn tiền trong 5-7 ngày ạ. Có thể lâu hơn do hàng phải chuyển về ạ.
+     → intent: resolve
+[KH] 5-7 ngày nữa à, lâu quá. Thôi vậy đi.
+     → intent: negative_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #166
+Chủ đề     : Hủy đơn hàng
+Mức từ lóng: heavy
+Hài lòng   : neutral
+============================================================
+[KH] hủy đơn r mà app vẫn báo đang xử lý, sao v
+     → intent: complaint
+[TV] Dạ đôi khi trạng thái trên app cập nhật chậm ạ. Anh/chị cho em mã đơn em kiểm tra ạ.
+     → intent: request_info
+[KH] DH20240566
+     → intent: provide_info
+[TV] Dạ em xác nhận đơn đã hủy thành công ạ. App chưa cập nhật, anh/chị refresh lại trang là thấy ạ.
+     → intent: resolve
+[KH] ok dc r, hơi dở nhưng dc
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #167
+Chủ đề     : Giao nhận hàng - Yêu cầu đặc biệt
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn giao hàng ngoài giờ hành chính (sau 6h tối) có được không?
+     → intent: inquiry
+[TV] Dạ hiện tại đối tác vận chuyển giao hàng trong khung 8h-20h ạ. Sau 6h tối vẫn trong khung giờ giao ạ. Anh/chị muốn hẹn giao khoảng mấy giờ ạ?
+     → intent: request_info
+[KH] Khoảng 7h tối vì mình đi làm về muộn.
+     → intent: provide_info
+[TV] Dạ em ghi chú giao hàng sau 7h tối cho shipper ạ. Shipper sẽ gọi trước khi tới ạ.
+     → intent: confirm_resolve
+[KH] Hay quá, cảm ơn bạn rất nhiều!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #168
+Chủ đề     : Giao nhận hàng - Yêu cầu đặc biệt
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi giao hàng ra đảo Phú Quốc dc k, phí ship bao nhiêu
+     → intent: inquiry
+[TV] Dạ giao ra Phú Quốc được ạ. Tùy trọng lượng hàng, phí ship khoảng 40-80k, thời gian 5-7 ngày ạ. Anh/chị đang mua sản phẩm gì ạ?
+     → intent: request_info
+[KH] mua túi xách, nhẹ thôi
+     → intent: provide_info
+[TV] Dạ túi xách nhẹ thì phí ship khoảng 45k, giao 5 ngày ạ.
+     → intent: resolve
+[KH] ok dc, đặt luôn
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #169
+Chủ đề     : Sản phẩm hết hàng
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Sản phẩm mình thích báo hết hàng rồi, bao giờ có lại?
+     → intent: inquiry
+[TV] Dạ anh/chị cho em biết sản phẩm nào để em kiểm tra lịch nhập hàng ạ.
+     → intent: request_info
+[KH] Nồi cơm điện Cuckoo CR-0675F, tìm mãi không có.
+     → intent: provide_info
+[TV] Dạ sản phẩm này dự kiến có hàng lại sau 2 tuần ạ. Anh/chị có thể bấm Thông báo khi có hàng trên trang sản phẩm để nhận email thông báo ạ.
+     → intent: resolve
+[KH] Ok mình bấm thông báo rồi, cảm ơn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #170
+Chủ đề     : Sản phẩm hết hàng
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi sp này hết hàng online nhưng ở cửa hàng còn k, mình ra lấy dc k
+     → intent: inquiry
+[TV] Dạ em kiểm tra ngay ạ. Anh/chị muốn mua sản phẩm nào và gần cửa hàng nào ạ?
+     → intent: request_info
+[KH] máy xay cầm tay Braun, mình ở Q.7 HCM
+     → intent: provide_info
+[TV] Dạ cửa hàng Q.7 trên Nguyễn Thị Thập còn 2 cái ạ. Anh/chị có thể ghé mua hoặc em giữ 1 cái đến cuối ngày ạ.
+     → intent: resolve
+[KH] giữ cho mình 1 cái, chiều mình ra lấy
+     → intent: request_action
+[TV] Dạ em giữ rồi ạ. Cửa hàng mở đến 9h tối ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #171
+Chủ đề     : Đóng gói / Gói quà
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua tặng người yêu, có dịch vụ gói quà đẹp không shop?
+     → intent: inquiry
+[TV] Dạ shop có dịch vụ gói quà ạ. Phí 25k/hộp, có 3 kiểu: hộp hồng, hộp xanh classic, và hộp kraft vintage ạ. Có kèm thiệp viết tay miễn phí ạ.
+     → intent: resolve
+[KH] Chọn hộp hồng nhé bạn, thiệp viết "Happy Birthday, yêu nhiều!".
+     → intent: request_action
+[TV] Dạ em ghi nhận rồi ạ. Hộp hồng + thiệp viết tay, đóng gói cẩn thận ạ. Sản phẩm nào cần gói quà ạ?
+     → intent: request_info
+[KH] Đơn DH20240571, gói tất cả sản phẩm trong đơn luôn nhé.
+     → intent: provide_info
+[TV] Dạ xong rồi ạ. Chúc anh tặng quà vui vẻ ạ!
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #172
+Chủ đề     : Đóng gói / Gói quà
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi mua hàng dễ vỡ có đóng gói cẩn thận k, mình sợ bể
+     → intent: inquiry
+[TV] Dạ tất cả hàng dễ vỡ shop đóng gói bằng foam + hộp cứng + dán Fragile ạ. Tuy nhiên nếu anh/chị muốn đóng gói thêm kỹ hơn thì thêm 10k/kiện ạ.
+     → intent: resolve
+[KH] thêm 10k đóng gói kỹ đi, mua bộ chén sứ
+     → intent: request_action
+[TV] Dạ em ghi chú đóng gói đặc biệt cho đơn ạ. Bộ chén sứ sẽ được bọc từng chiếc riêng ạ.
+     → intent: confirm_resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #173
+Chủ đề     : So sánh sản phẩm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Shop có thể so sánh iPhone 15 và Samsung S24 giúp mình được không?
+     → intent: inquiry
+[TV] Dạ được ạ. iPhone 15: chip A16, camera 48MP, iOS mượt, giá 22 triệu ạ. Samsung S24: chip Snapdragon 8 Gen 3, camera 50MP AI, Android tùy biến, giá 20 triệu ạ. Anh/chị dùng hệ sinh thái nào nhiều hơn ạ?
+     → intent: request_info
+[KH] Mình dùng MacBook nên muốn liên kết, chắc iPhone hợp hơn.
+     → intent: provide_info
+[TV] Dạ đúng rồi ạ. Với MacBook thì iPhone liên kết cực tốt qua AirDrop, iCloud, Handoff ạ. Em khuyên iPhone 15 ạ.
+     → intent: resolve
+[KH] Ok mình lấy iPhone 15, cảm ơn bạn phân tích chi tiết!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #174
+Chủ đề     : Tra cứu chính sách ship
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi cho hỏi giao hàng chủ nhật dc k hay chỉ ngày thường
+     → intent: inquiry
+[TV] Dạ đối tác vận chuyển giao Thứ 2 đến Thứ 7 ạ. Chủ nhật và ngày lễ không giao ạ.
+     → intent: resolve
+[KH] vậy đặt thứ 6 thì chủ nhật k giao, thứ 2 mới giao à
+     → intent: inquiry
+[TV] Dạ đúng rồi ạ. Đặt thứ 6, dự kiến xử lý thứ 7 và giao thứ 2 tuần sau ạ.
+     → intent: resolve
+[KH] ok hiểu r, tks bạn
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #175
+Chủ đề     : Khiếu nại thái độ shipper
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Shipper giao hàng thái độ rất thiếu tôn trọng, ném hàng trước cửa rồi đi luôn.
+     → intent: complaint
+[TV] Dạ em rất xin lỗi về hành vi không chuyên nghiệp của shipper ạ. Anh/chị cho em biết mã đơn và tên shipper (nếu có) để em phản hồi đơn vị vận chuyển ạ.
+     → intent: request_info
+[KH] Mã DH20240575, không biết tên shipper nhưng giao lúc 3h chiều.
+     → intent: provide_info
+[TV] Dạ em tra được thông tin shipper rồi ạ. Em đã gửi phản hồi và yêu cầu đơn vị vận chuyển xử lý ạ. Em tặng voucher 30k xin lỗi anh/chị ạ.
+     → intent: resolve
+[KH] Cảm ơn bạn ghi nhận, mong lần sau shipper khác lịch sự hơn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #176
+Chủ đề     : Khiếu nại thái độ shipper
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] shipper gọi bắt ra ngay k thì trả hàng, e đang họp mà
+     → intent: complaint
+[TV] Dạ shipper không được phép ép buộc khách nhận ngay ạ. Anh/chị cho em mã đơn, em liên hệ shipper hẹn giao lại vào khung giờ khác ạ.
+     → intent: request_info
+[KH] DH576, giao lại sau 5h chiều cho e
+     → intent: provide_info
+[TV] Dạ em đã nhắn shipper giao lại sau 5h chiều ạ. Shipper sẽ gọi trước khi tới ạ. Em xin lỗi vì sự bất tiện ạ.
+     → intent: resolve
+[KH] ok dc, nhưng dịch vụ ship cần cải thiện nhiều lắm
+     → intent: negative_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #177
+Chủ đề     : Hỗ trợ kỹ thuật sản phẩm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua robot hút bụi nhưng không biết cài đặt kết nối wifi, bạn hướng dẫn giúp.
+     → intent: inquiry
+[TV] Dạ anh/chị tải app Mi Home trên điện thoại, bật wifi 2.4GHz (không dùng 5GHz), bật nguồn robot rồi vào app bấm Thêm thiết bị ạ. Làm theo hướng dẫn trên màn hình là kết nối được ạ.
+     → intent: resolve
+[KH] Wifi nhà mình 5GHz, sao không kết nối được?
+     → intent: inquiry
+[TV] Dạ hầu hết robot hút bụi chỉ hỗ trợ wifi 2.4GHz ạ. Anh/chị vào router đổi sang 2.4GHz hoặc tạo mạng 2.4GHz riêng rồi kết nối nhé ạ.
+     → intent: resolve
+[KH] Ah vậy ra, mình đổi sang 2.4GHz rồi kết nối thành công. Cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #178
+Chủ đề     : Hỗ trợ kỹ thuật sản phẩm
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi camera e mua quay ban đêm mờ quá, k thấy gì hết
+     → intent: complaint
+[TV] Dạ anh/chị kiểm tra xem đèn hồng ngoại có sáng đỏ khi tắt đèn phòng không ạ? Nếu không sáng thì lỗi IR ạ.
+     → intent: request_info
+[KH] có sáng đỏ nhưng hình vẫn mờ
+     → intent: provide_info
+[TV] Dạ anh/chị vào app camera > Cài đặt > Chế độ ban đêm > bật Tự động hoặc Bật thủ công ạ. Nếu vẫn mờ thì lau sạch ống kính phía trước ạ.
+     → intent: resolve
+[KH] lau ống kính xong rõ hơn nhiều r, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #179
+Chủ đề     : Chuyển hàng quốc tế
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Shop có ship hàng ra nước ngoài không, mình muốn gửi quà cho bạn ở Nhật.
+     → intent: inquiry
+[TV] Dạ hiện tại shop chỉ giao hàng trong lãnh thổ Việt Nam ạ. Tuy nhiên anh/chị có thể dùng dịch vụ chuyển phát quốc tế như DHL hoặc EMS ạ. Em giao hàng tới địa chỉ của anh/chị, rồi anh/chị gửi đi qua DHL ạ.
+     → intent: resolve
+[KH] Vậy mình giao về nhà rồi tự gửi DHL nhé. Cảm ơn bạn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #180
+Chủ đề     : Mua hàng trên livestream
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e mua hàng qua livestream hôm qua mà k thấy đơn trong app
+     → intent: complaint
+[TV] Dạ đơn mua qua livestream cần 1-2 tiếng để đồng bộ sang app ạ. Anh/chị cho em tên sản phẩm và giá mua để em tìm đơn nhé ạ.
+     → intent: request_info
+[KH] serum dưỡng da giá 199k deal live
+     → intent: provide_info
+[TV] Dạ em tìm thấy đơn rồi ạ. Đã đồng bộ vào app, anh/chị kiểm tra lại nhé ạ. Đơn đang đóng gói, dự kiến giao ngày mai ạ.
+     → intent: resolve
+[KH] thấy r bạn, tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #181
+Chủ đề     : Đánh giá chất lượng giao hàng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn khen shipper giao hàng hôm nay rất lịch sự và cẩn thận, có ghi nhận không?
+     → intent: positive_feedback
+[TV] Dạ cảm ơn anh/chị đã chia sẻ ạ. Em ghi nhận và chuyển lời khen tới shipper ạ. Anh/chị cũng có thể đánh giá 5 sao cho shipper trên app nhé ạ.
+     → intent: resolve
+[KH] Mình đánh giá rồi. Shipper tên Minh rất dễ thương!
+     → intent: positive_feedback
+[TV] Dạ bạn Minh chắc chắn sẽ rất vui khi nhận được lời khen ạ. Cảm ơn anh/chị ạ!
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #182
+Chủ đề     : Kiểm tra hàng chính hãng
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi làm sao biết sp mua là hàng chính hãng, có check dc k
+     → intent: inquiry
+[TV] Dạ tất cả sản phẩm chính hãng có mã QR hoặc mã barcode trên bao bì ạ. Anh/chị quét mã bằng app chính hãng hoặc gửi em mã sản phẩm để em tra cứu ạ.
+     → intent: resolve
+[KH] mã 1234567890123 đây shop
+     → intent: provide_info
+[TV] Dạ em tra cứu rồi ạ. Mã sản phẩm hợp lệ, đúng hàng chính hãng nhập khẩu từ Hàn Quốc, ngày sản xuất tháng 3/2024 ạ.
+     → intent: resolve
+[KH] ok yên tâm r, tks shop check giúm
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #183
+Chủ đề     : Hỏi về phí ship
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Bạn cho mình hỏi phí ship tính theo khoảng cách hay trọng lượng?
+     → intent: inquiry
+[TV] Dạ phí ship tính theo cả hai ạ. Trong nội thành phí cố định 25k/đơn, liên tỉnh tính theo trọng lượng (từ 30-60k tùy vùng) ạ. Đơn từ 299k trở lên được freeship nội thành ạ.
+     → intent: resolve
+[KH] Vậy mình ở Hà Nội đặt hàng từ kho HCM thì phí bao nhiêu?
+     → intent: inquiry
+[TV] Dạ với đơn dưới 1kg từ HCM ra Hà Nội phí 35k ạ. Đơn từ 499k trở lên giảm 50% phí ship liên tỉnh ạ.
+     → intent: resolve
+[KH] Ok rõ ràng, cảm ơn bạn giải thích chi tiết!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #184
+Chủ đề     : Sản phẩm không như mô tả
+Mức từ lóng: heavy
+Hài lòng   : unsatisfied
+============================================================
+[KH] ảnh đăng sp đẹp lung linh mà hàng nhận dc xấu, sai màu sai chất liệu
+     → intent: complaint
+[TV] Dạ em rất xin lỗi ạ. Anh/chị gửi ảnh so sánh sản phẩm thật và ảnh trên web cho em nhé ạ.
+     → intent: request_info
+[KH] đây, khác xa 100%
+     → intent: provide_info
+[TV] Dạ em xem rồi ạ, chênh lệch quá lớn, đây là trách nhiệm của shop ạ. Em hoàn tiền 100% và anh/chị không cần trả lại hàng ạ.
+     → intent: resolve
+[KH] ok hoàn tiền đi, mình k tin shop nữa r
+     → intent: negative_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #185
+Chủ đề     : Mua hàng theo nhóm / Group buy
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi mình muốn mua chung với nhóm bạn để dc giá tốt, có chương trình gì k
+     → intent: inquiry
+[TV] Dạ shop có chương trình Mua chung (Group Buy) ạ. Đủ 5 người cùng mua 1 sản phẩm sẽ giảm 20%, đủ 10 người giảm 30% ạ.
+     → intent: resolve
+[KH] hay đó, sao để tạo nhóm mua chung v shop
+     → intent: inquiry
+[TV] Dạ anh/chị vào sản phẩm muốn mua, bấm Tạo nhóm mua chung, chia sẻ link cho bạn bè ạ. Khi đủ 5 người bấm mua thì deal tự kích hoạt ạ.
+     → intent: resolve
+[KH] ok dễ quá, e share link cho bạn bè r
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #186
+Chủ đề     : Hỏi về cách đóng gói
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình mua đồ điện tử giá trị cao, shop có đóng gói chống sốc không?
+     → intent: inquiry
+[TV] Dạ với đồ điện tử shop đóng gói 3 lớp ạ: bọc xốp mềm, hộp cứng có foam chống sốc, và thùng carton bên ngoài dán Fragile ạ. Đảm bảo an toàn khi vận chuyển ạ.
+     → intent: resolve
+[KH] Nghe yên tâm rồi. Shop có bảo hiểm hàng hóa không?
+     → intent: inquiry
+[TV] Dạ đơn từ 1 triệu trở lên tự động có bảo hiểm hàng hóa, nếu hỏng do vận chuyển sẽ được đền 100% ạ.
+     → intent: resolve
+[KH] Tuyệt, mình đặt hàng ngay. Cảm ơn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #187
+Chủ đề     : Yêu cầu hóa đơn
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi e mua hàng tuần trước mà quên xin hóa đơn, giờ xin bổ sung dc k
+     → intent: request_action
+[TV] Dạ hóa đơn có thể xuất bổ sung trong vòng 30 ngày kể từ ngày mua ạ. Anh/chị cho em mã đơn và thông tin xuất hóa đơn nhé ạ.
+     → intent: request_info
+[KH] DH20240587, xuất tên cá nhân, mã thuế k cần
+     → intent: provide_info
+[TV] Dạ em ghi nhận ạ. Hóa đơn sẽ gửi qua email trong 2 ngày làm việc ạ.
+     → intent: confirm_resolve
+[KH] ok tks shop
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #188
+Chủ đề     : Kiểm tra giá sản phẩm
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Giá trên shop có phải đã bao gồm VAT chưa?
+     → intent: inquiry
+[TV] Dạ tất cả giá hiển thị trên shop đã bao gồm VAT rồi ạ. Không phát sinh thêm thuế khi thanh toán, trừ hàng nhập khẩu đặc biệt ạ.
+     → intent: resolve
+[KH] Vậy giá 500k trên web là giá cuối cùng mình phải trả đúng không?
+     → intent: inquiry
+[TV] Dạ đúng rồi ạ. 500k + phí ship (nếu có) = tổng thanh toán ạ. Nếu freeship thì chỉ 500k thôi ạ.
+     → intent: resolve
+[KH] Ok rõ ràng, cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #189
+Chủ đề     : Mua hàng đặt trước (Pre-order)
+Mức từ lóng: medium
+Hài lòng   : neutral
+============================================================
+[KH] shop ơi sản phẩm đang pre-order, bao giờ giao v
+     → intent: inquiry
+[TV] Dạ anh/chị cho em biết sản phẩm nào ạ? Mỗi sản phẩm pre-order có ngày giao dự kiến khác nhau ạ.
+     → intent: request_info
+[KH] son dưỡng môi limited edition bạn ơi
+     → intent: provide_info
+[TV] Dạ son limited edition đợt này dự kiến giao ngày 25 tháng này ạ. Đặt cọc 50% khi pre-order, thanh toán phần còn lại khi nhận hàng ạ.
+     → intent: resolve
+[KH] ok mình pre-order luôn, sợ hết
+     → intent: request_action
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #190
+Chủ đề     : Đặt lịch hẹn tại cửa hàng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình muốn tới cửa hàng xem sản phẩm trực tiếp trước khi mua, có cần hẹn trước không?
+     → intent: inquiry
+[TV] Dạ anh/chị có thể ghé bất cứ lúc nào trong giờ mở cửa 9h-21h ạ. Nếu muốn tư vấn riêng thì đặt lịch hẹn để em sắp xếp nhân viên chuyên trách ạ.
+     → intent: resolve
+[KH] Mình muốn hẹn chiều thứ 7, khoảng 3h chiều ở cửa hàng Q.1.
+     → intent: request_action
+[TV] Dạ em đặt lịch cho anh/chị 3h chiều thứ 7 tại cửa hàng 123 Nguyễn Huệ Q.1 ạ. Nhân viên Hương sẽ đón và tư vấn ạ.
+     → intent: confirm_resolve
+[KH] Cảm ơn bạn rất nhiều, mình sẽ tới đúng giờ!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #191
+Chủ đề     : Hỏi về chính sách trả góp
+Mức từ lóng: heavy
+Hài lòng   : satisfied
+============================================================
+[KH] trả góp 0% thật k shop hay đến lúc phải đóng thêm phí
+     → intent: inquiry
+[TV] Dạ trả góp 0% nghĩa là anh/chị chỉ trả đúng giá sản phẩm chia đều các tháng, không phát sinh lãi hay phí ẩn ạ. Tuy nhiên nếu trả chậm có phí phạt từ ngân hàng ạ.
+     → intent: resolve
+[KH] vậy tháng nào cũng phải trả đúng ngày à
+     → intent: inquiry
+[TV] Dạ đúng rồi ạ. Ngân hàng sẽ trừ tự động từ thẻ vào ngày cố định mỗi tháng ạ. Nếu thẻ không đủ tiền sẽ bị tính phí trễ hạn ạ.
+     → intent: resolve
+[KH] oke hiểu r, e sẽ chuẩn bị tiền đầy đủ. Tks shop
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #192
+Chủ đề     : Khách hàng hỏi nhiều vấn đề cùng lúc
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e hỏi 1 lúc 3 cái nha: 1 là ship ra đà nẵng phí bao nhiêu, 2 là mã SALE50 còn dùng dc k, 3 là khi nào có đợt sale tiếp
+     → intent: inquiry
+[TV] Dạ em trả lời từng câu nhé ạ. 1) Ship ra Đà Nẵng khoảng 30-40k tùy nặng nhẹ ạ. 2) Mã SALE50 còn hiệu lực đến hết ngày 30 tháng này ạ. 3) Đợt sale tiếp theo là ngày 15 tháng sau, giảm tới 50% toàn shop ạ.
+     → intent: resolve
+[KH] oke tks shop trả lời đủ, mình đặt hàng luôn dùng SALE50
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #193
+Chủ đề     : Hỏi về chất liệu sản phẩm
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Bạn cho mình hỏi ba lô này chất liệu gì, có chống nước không?
+     → intent: inquiry
+[TV] Dạ ba lô này chất liệu polyester 600D chống nước nhẹ ạ, chống mưa phùn tốt nhưng không chịu được mưa to lâu ạ. Nếu cần chống nước hoàn toàn thì có dòng waterproof giá cao hơn 100k ạ.
+     → intent: resolve
+[KH] Mình hay đi xe máy dưới mưa, cần chống nước tốt hơn.
+     → intent: provide_info
+[TV] Dạ vậy em khuyên dòng waterproof 100% ạ. Có túi chống nước riêng bên trong cho laptop ạ. Giá 550k đang sale 480k ạ.
+     → intent: resolve
+[KH] Để mình xem mẫu đó trên web, cảm ơn bạn tư vấn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #194
+Chủ đề     : Thắc mắc về thời gian xử lý đơn
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e đặt hàng cách đây 3 tiếng mà trạng thái vẫn "chờ xác nhận", lâu v
+     → intent: complaint
+[TV] Dạ thời gian xác nhận đơn thường từ 1-4 tiếng trong giờ hành chính ạ. Nếu đặt ngoài giờ (sau 6h tối) thì xác nhận vào sáng hôm sau ạ. Anh/chị đặt lúc mấy giờ ạ?
+     → intent: request_info
+[KH] đặt lúc 2h chiều
+     → intent: provide_info
+[TV] Dạ vậy là đang trong khung thời gian bình thường ạ. Đơn sẽ được xác nhận trước 6h chiều hôm nay ạ. Anh/chị yên tâm nhé ạ.
+     → intent: resolve
+[KH] ok mình chờ thêm, tks shop giải thích
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #195
+Chủ đề     : Yêu cầu tách đơn hàng
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Mình đặt 1 đơn nhưng muốn tách thành 2 để giao 2 địa chỉ khác nhau, được không?
+     → intent: request_action
+[TV] Dạ hệ thống không hỗ trợ tách đơn ạ. Tuy nhiên em có thể hủy đơn hiện tại và tạo 2 đơn mới cho anh/chị ạ.
+     → intent: resolve
+[KH] Vậy hủy đơn DH20240595 và tạo 2 đơn mới giúp mình nhé.
+     → intent: request_action
+[TV] Dạ em hủy đơn cũ rồi ạ. Anh/chị đặt 2 đơn mới với 2 địa chỉ khác nhau nhé ạ. Em ghi chú ưu tiên xử lý cả 2 ạ.
+     → intent: confirm_resolve
+[KH] Ok, mình đặt lại ngay. Cảm ơn bạn!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #196
+Chủ đề     : Khách hàng nước ngoài hỏi tiếng Việt
+Mức từ lóng: light
+Hài lòng   : satisfied
+============================================================
+[KH] Xin chào, tôi là người Hàn Quốc sống ở Việt Nam. Tôi muốn mua hàng nhưng trang web không có tiếng Hàn, bạn giúp tôi được không?
+     → intent: inquiry
+[TV] Dạ chào anh/chị ạ. Hiện tại shop chỉ có giao diện tiếng Việt ạ. Tuy nhiên anh/chị có thể dùng Google Translate trên trình duyệt để dịch trang web ạ. Hoặc nhắn tin trực tiếp cho em, em hỗ trợ tìm sản phẩm và đặt hàng giúp ạ.
+     → intent: resolve
+[KH] Cảm ơn bạn, bạn giúp tôi đặt một đôi giày chạy bộ size 42 được không?
+     → intent: request_action
+[TV] Dạ được ạ. Em gợi ý Nike Revolution 6 hoặc Adidas Duramo 10 ạ. Em gửi ảnh và giá để anh/chị chọn nhé ạ.
+     → intent: resolve
+[KH] Nike Revolution 6 đẹp quá, tôi lấy cái này. Cảm ơn bạn rất nhiều!
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #197
+Chủ đề     : Thắc mắc về bảo mật dữ liệu
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi cho hỏi thông tin cá nhân của mình trên app có an toàn k, e lo lộ data
+     → intent: inquiry
+[TV] Dạ shop cam kết bảo mật thông tin khách hàng theo tiêu chuẩn quốc tế ạ. Dữ liệu được mã hóa SSL 256-bit, không chia sẻ cho bên thứ 3 ạ. Anh/chị nên bật xác thực 2 bước để bảo mật hơn ạ.
+     → intent: resolve
+[KH] ok mình bật 2fa luôn, tks shop cho biết
+     → intent: positive_feedback
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #198
+Chủ đề     : Hỏi về hàng refurbished
+Mức từ lóng: light
+Hài lòng   : neutral
+============================================================
+[KH] Mình thấy có sản phẩm ghi "Like new 99%", vậy là hàng cũ đã qua sử dụng à?
+     → intent: inquiry
+[TV] Dạ hàng "Like new 99%" là sản phẩm đã qua sử dụng rất ít hoặc chỉ khui hộp kiểm tra, được kiểm tra chất lượng kỹ trước khi bán ạ. Giá rẻ hơn hàng mới 20-30% ạ.
+     → intent: resolve
+[KH] Vậy có bảo hành như hàng mới không?
+     → intent: inquiry
+[TV] Dạ hàng Like new bảo hành 6 tháng tại shop, thấp hơn hàng mới (12 tháng) ạ. Đổi trả trong 7 ngày nếu có lỗi ạ.
+     → intent: resolve
+[KH] Hiểu rồi, mình cân nhắc thêm. Cảm ơn bạn.
+     → intent: acknowledge
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #199
+Chủ đề     : Phản hồi tích cực tổng thể
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi e mua ở đây mấy năm r lúc nào dịch vụ cũng tốt, tks shop nhiều
+     → intent: positive_feedback
+[TV] Dạ cảm ơn anh/chị đã đồng hành cùng shop suốt mấy năm qua ạ. Đây là nguồn động lực lớn để shop cải thiện mỗi ngày ạ. Em tặng anh/chị voucher VIP200 giảm 200k cho đơn tiếp theo ạ.
+     → intent: resolve
+[KH] ơ xịn v, 200k cơ à, tks shop quá
+     → intent: positive_feedback
+[TV] Dạ đây là ưu đãi dành riêng cho khách hàng trung thành ạ. Chúc anh/chị mua sắm vui vẻ ạ!
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+ĐOẠN #200
+Chủ đề     : Tổng hợp - Tình huống phức tạp
+Mức từ lóng: medium
+Hài lòng   : satisfied
+============================================================
+[KH] shop ơi đơn DH999 nhận hàng r nhưng thiếu 1 sp, sp còn lại bị lỗi, mình muốn đổi cái lỗi và giao bù cái thiếu
+     → intent: complaint
+[TV] Dạ em xin lỗi vì cả 2 vấn đề ạ. Anh/chị gửi ảnh sp bị lỗi và cho biết sp nào bị thiếu nhé ạ.
+     → intent: request_info
+[KH] sp lỗi là tai nghe bên trái mất tiếng, sp thiếu là ốp lưng đen
+     → intent: provide_info
+[TV] Dạ em ghi nhận cả 2 ạ. Em gửi tai nghe mới thay thế và ốp lưng đen bổ sung trong 1 kiện hàng, dự kiến 2 ngày ạ. Anh/chị không cần trả tai nghe cũ ạ.
+     → intent: resolve
+[KH] ok xử lý gọn gàng quá, 5 sao cho shop luôn
+     → intent: positive_feedback
+[TV] Dạ cảm ơn anh/chị rất nhiều ạ. Shop luôn cố gắng hỗ trợ tốt nhất ạ!
+     → intent: resolve
+------------------------------------------------------------
+
+============================================================
+THỐNG KÊ PHẦN 2
+============================================================
+Tổng số đoạn hội thoại : 100
+Đánh số                : #101 - #200
+
+Phân bổ theo chủ đề:
+  Khiếu nại giao hàng chậm       : 7  đoạn
+  Yêu cầu hoàn tiền              : 7  đoạn
+  Sản phẩm lỗi / hư hỏng         : 7  đoạn
+  Hỏi thông tin đơn hàng         : 7  đoạn
+  Tư vấn sản phẩm                : 7  đoạn
+  Khuyến mãi / Voucher           : 7  đoạn
+  Đổi size / màu sắc             : 7  đoạn
+  Lỗi thanh toán                 : 7  đoạn
+  Tài khoản / Đăng nhập          : 7  đoạn
+  Hủy đơn hàng                   : 3  đoạn
+  Giao nhận đặc biệt             : 2  đoạn
+  Sản phẩm hết hàng              : 2  đoạn
+  Đóng gói / Gói quà             : 2  đoạn
+  Tình huống đặc biệt khác       : 28 đoạn
+
+Theo mức hài lòng:
+  satisfied   : 55 đoạn (55%)
+  neutral     : 29 đoạn (29%)
+  unsatisfied : 16 đoạn (16%)
+
+Theo mức từ lóng:
+  light  : 40 đoạn (40%)
+  medium : 38 đoạn (38%)
+  heavy  : 22 đoạn (22%)
+
+TÌNH HUỐNG MỚI (không có trong Phần 1):
+  - Hủy đơn hàng
+  - Giao ngoài giờ / ra đảo
+  - Sản phẩm hết hàng
+  - Đóng gói / Gói quà
+  - So sánh sản phẩm
+  - Tra cứu chính sách ship
+  - Khiếu nại thái độ shipper
+  - Hỗ trợ kỹ thuật sản phẩm
+  - Chuyển hàng quốc tế
+  - Mua hàng livestream
+  - Mua chung / Group buy
+  - Pre-order
+  - Đặt lịch hẹn tại cửa hàng
+  - Hàng refurbished
+  - Bảo mật dữ liệu
+  - Khách nước ngoài
+  - Tách đơn hàng
+  - Yêu cầu hóa đơn bổ sung
+============================================================
