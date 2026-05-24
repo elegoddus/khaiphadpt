@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Workspace Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass">
+            <div class="brand">
+                <div class="logo">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h2>CS Workspace</h2>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-regular fa-comment-dots"></i> Đoạn chat</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Khách hàng</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-chart-pie"></i> Báo cáo</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Cài đặt</a>
+            </div>
+
+            <div class="conversation-list">
+                <h3>Gần đây</h3>
+                <div class="chat-item active">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Avatar">
+                    <div class="chat-info">
+                        <h4>Nguyễn Văn A</h4>
+                        <p>cho mình hỏi mua tài khoản...</p>
+                    </div>
+                    <span class="time">Vừa xong</span>
+                </div>
+                <div class="chat-item">
+                    <img src="https://i.pravatar.cc/150?img=5" alt="Avatar">
+                    <div class="chat-info">
+                        <h4>Trần Thị B</h4>
+                        <p>Cảm ơn shop nhé</p>
+                    </div>
+                    <span class="time">10p trước</span>
+                </div>
+                <div class="chat-item unread">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="Avatar">
+                    <div class="chat-info">
+                        <h4>Lê Văn C</h4>
+                        <p>Lỗi giao hàng, kiểm tra...</p>
+                    </div>
+                    <span class="badge">1</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area glass">
+            <header class="chat-header">
+                <div class="current-user">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Avatar">
+                    <div>
+                        <h3>Nguyễn Văn A</h3>
+                        <span class="status online">Đang hoạt động</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fa-solid fa-phone"></i></button>
+                    <button class="icon-btn"><i class="fa-solid fa-video"></i></button>
+                    <button class="icon-btn"><i class="fa-solid fa-circle-info"></i></button>
+                </div>
+            </header>
+
+            <div class="messages" id="messages-container">
+                <div class="message-wrapper customer">
+                    <img src="https://i.pravatar.cc/150?img=1" class="msg-avatar" alt="User">
+                    <div class="message-group">
+                        <div class="message customer">Shop ơi, tài khoản netflix của mình mua hôm qua tự nhiên bị lỗi không xem được, cứ báo sai mật khẩu là sao nhỉ?</div>
+                        <span class="msg-time">10:42 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <button class="icon-btn"><i class="fa-solid fa-paperclip"></i></button>
+                <div class="input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." autocomplete="off">
+                    <button class="btn-ai-assist" id="ai-assist-btn" title="Gợi ý AI"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+                </div>
+                <button class="send-btn" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </main>
+
+        <!-- Right Panel (AI Assistant) -->
+        <aside class="ai-panel glass">
+            <div class="ai-header">
+                <div class="ai-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h3>Trợ lý AI</h3>
+            </div>
+            
+            <div class="ai-body">
+                <div class="ai-instruction">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Nhấn vào biểu tượng <strong>Cây đũa phép</strong> ở thanh nhập hoặc chọn tin nhắn của khách để phân tích gợi ý trả lời.</p>
+                </div>
+                
+                <div id="ai-loading" class="ai-loading hidden">
+                    <div class="spinner"></div>
+                    <p>Đang phân tích ý định khách hàng...</p>
+                </div>
+                
+                <div id="ai-results" class="ai-results hidden">
+                    <div class="ai-meta">
+                        <div class="meta-item">
+                            <span class="label">Chủ đề</span>
+                            <span class="value topic" id="ai-topic">Lỗi tài khoản</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Cảm xúc</span>
+                            <span class="value sentiment bad" id="ai-sentiment">Tiêu cực</span>
+                        </div>
+                    </div>
+                    
+                    <h4 class="suggestions-title">Gợi ý trả lời:</h4>
+                    <div class="suggestions-list" id="suggestions-list">
+                        <!-- Suggestions will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Chat Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+        body { background: #f0f2f5; display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .chat-container { width: 100%; max-width: 450px; height: 90vh; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; }
+        
+        .setup-screen { padding: 40px; text-align: center; display: flex; flex-direction: column; gap: 20px; flex: 1; justify-content: center; }
+        .setup-screen h2 { color: #1e293b; }
+        .setup-screen input { padding: 15px; border-radius: 12px; border: 1px solid #cbd5e1; outline: none; font-size: 1rem; text-align: center; }
+        .setup-screen button { padding: 15px; border-radius: 12px; border: none; background: #4f46e5; color: white; font-weight: 600; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        .setup-screen button:hover { background: #4338ca; }
+        
+        .chat-screen { display: none; flex-direction: column; height: 100%; }
+        .header { background: #4f46e5; color: white; padding: 20px; display: flex; align-items: center; gap: 15px; }
+        .header img { width: 40px; height: 40px; border-radius: 50%; background: white; }
+        .header-info h3 { font-size: 1.1rem; margin-bottom: 2px; }
+        .header-info p { font-size: 0.8rem; opacity: 0.8; }
+        
+        .messages { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; background: #f8fafc; }
+        .msg-wrapper { display: flex; gap: 10px; max-width: 85%; }
+        .msg-wrapper.me { align-self: flex-end; flex-direction: row-reverse; }
+        .msg-wrapper.agent { align-self: flex-start; }
+        
+        .msg { padding: 12px 16px; border-radius: 16px; font-size: 0.95rem; line-height: 1.4; }
+        .msg.me { background: #4f46e5; color: white; border-top-right-radius: 4px; }
+        .msg.agent { background: white; color: #1e293b; border-top-left-radius: 4px; border: 1px solid #e2e8f0; }
+        .msg-time { font-size: 0.7rem; color: #94a3b8; margin-top: 4px; }
+        .msg-wrapper.me .msg-time { text-align: right; }
+        
+        .input-area { padding: 15px; background: white; border-top: 1px solid #e2e8f0; display: flex; gap: 10px; }
+        .input-area input { flex: 1; padding: 12px 15px; border-radius: 20px; border: 1px solid #cbd5e1; outline: none; font-size: 0.95rem; }
+        .input-area button { width: 45px; height: 45px; border-radius: 50%; border: none; background: #4f46e5; color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+        .input-area button:hover { background: #4338ca; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Setup Screen -->
+        <div class="setup-screen" id="setup-screen">
+            <h2>Đăng nhập Khách hàng</h2>
+            <p style="color: #64748b; font-size: 0.9rem;">Nhập ID/Tên bất kỳ để bắt đầu chat với cửa hàng.</p>
+            <input type="text" id="server-url" value="ws://localhost:8000/ws" placeholder="Server WS URL">
+            <input type="text" id="customer-id" placeholder="Tên khách hàng (VD: Lan, Nam...)" autocomplete="off">
+            <button id="connect-btn">Bắt đầu Chat</button>
+        </div>
+
+        <!-- Chat Screen -->
+        <div class="chat-screen" id="chat-screen">
+            <header class="header">
+                <img src="https://i.pravatar.cc/150?img=5" alt="Store">
+                <div class="header-info">
+                    <h3>CSKH Store</h3>
+                    <p id="ws-status">Đang kết nối...</p>
+                </div>
+            </header>
+            <div class="messages" id="messages-container"></div>
+            <div class="input-area">
+                <input type="text" id="chat-input" placeholder="Nhắn tin..." autocomplete="off">
+                <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const setupScreen = document.getElementById('setup-screen');
+        const chatScreen = document.getElementById('chat-screen');
+        const connectBtn = document.getElementById('connect-btn');
+        const customerIdInput = document.getElementById('customer-id');
+        const serverUrlInput = document.getElementById('server-url');
+        const wsStatus = document.getElementById('ws-status');
+        const messagesContainer = document.getElementById('messages-container');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+        
+        let ws;
+        let myId;
+
+        connectBtn.addEventListener('click', () => {
+            myId = customerIdInput.value.trim() || 'Guest_' + Math.floor(Math.random()*1000);
+            const url = `${serverUrlInput.value.trim()}/${myId}`;
+            
+            setupScreen.style.display = 'none';
+            chatScreen.style.display = 'flex';
+            
+            ws = new WebSocket(url);
+            
+            ws.onopen = () => { wsStatus.innerText = 'Trực tuyến'; };
+            ws.onclose = () => { wsStatus.innerText = 'Mất kết nối'; };
+            
+            ws.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                appendMessage(data.text, 'agent', data.timestamp);
+            };
+        });
+
+        function appendMessage(text, type, time) {
+            const wrapper = document.createElement('div');
+            wrapper.className = `msg-wrapper ${type}`;
+            if(!time) time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            
+            wrapper.innerHTML = `
+                <div style="display:flex; flex-direction:column">
+                    <div class="msg ${type}">${text}</div>
+                    <span class="msg-time">${time}</span>
+                </div>
+            `;
+            messagesContainer.appendChild(wrapper);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        sendBtn.addEventListener('click', () => {
+            const text = chatInput.value.trim();
+            if (text && ws && ws.readyState === WebSocket.OPEN) {
+                const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                ws.send(JSON.stringify({
+                    to: 'agent',
+                    text: text,
+                    timestamp: time
+                }));
+                appendMessage(text, 'me', time);
+                chatInput.value = '';
+            }
+        });
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendBtn.click();
+        });
+    </script>
+</body>
+</html>
